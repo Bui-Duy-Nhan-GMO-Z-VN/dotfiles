@@ -28,3 +28,13 @@ alias gd='git diff'
 
 # Grep with color
 alias grep='grep --color=auto'
+
+# Apps
+alias chrome='google-chrome --ozone-platform=x11'
+
+# local-env infra (docker compose). Path is machine-specific — override in
+# ~/.config/zsh/.zsh_local if it differs on another machine.
+INFRA_COMPOSE="${INFRA_COMPOSE:-$HOME/p/local-env/docker-compose-infra.yml}"
+alias infra-up="docker compose -f $INFRA_COMPOSE up -d"
+alias infra-down="docker compose -f $INFRA_COMPOSE down"
+alias infra-logs="docker compose -f $INFRA_COMPOSE logs -f"
