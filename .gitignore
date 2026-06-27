@@ -1,0 +1,10 @@
+# Per-machine / secret config — never commit these.
+zsh/.zsh_local
+*.local
+.gitconfig.local
+
+# Backups created by install.sh
+*.bak
+
+# OS noise
+.DS_Store

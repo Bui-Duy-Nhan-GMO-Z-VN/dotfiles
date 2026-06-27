@@ -1,0 +1,4 @@
+# Autoload example: this directory is added to $fpath and these files are
+# autoloaded as functions on demand (one function per file).
+# Named after the function so `autoload -Uz mkcd` finds it.
+mkdir -p -- "$1" && cd -- "$1"

@@ -1,0 +1,30 @@
+[init]
+	defaultBranch = main
+
+[core]
+	editor = vim
+	autocrlf = input
+
+[color]
+	ui = auto
+
+[pull]
+	rebase = true
+
+[push]
+	default = current
+	autoSetupRemote = true
+
+[alias]
+	st = status -sb
+	co = checkout
+	br = branch
+	ci = commit
+	lg = log --oneline --graph --decorate -20
+
+# Put name/email/credentials in ~/.gitconfig.local (not committed):
+#   [user]
+#       name  = Your Name
+#       email = you@example.com
+[include]
+	path = ~/.gitconfig.local
