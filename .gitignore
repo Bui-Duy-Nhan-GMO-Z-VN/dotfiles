@@ -8,3 +8,7 @@ zsh/.zsh_local
 
 # OS noise
 .DS_Store
+
+# Zsh completion cache (machine/version-specific, auto-generated)
+.zcompdump*
+zsh/.zcompdump*
